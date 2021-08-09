@@ -1,0 +1,45 @@
+@font-face {
+    src: url('fonts/BrownRegular.ttf');
+}
+
+@font-face {
+    src: url('fonts/Lulo.ttf');
+}
+
+.root {
+    -fx-font-family: "Brown Regular";
+}
+
+#stackPane {
+    -fx-background-image: url("./images/background.png");
+    -fx-background-size: cover;
+}
+
+TextField, PasswordField {
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 0 0 1 0; // top, right, bottom, left
+    -fx-background-color: transparent;
+}
+
+.hand:hover {
+    -fx-cursor: hand;
+}
+
+.slider .axis { -fx-tick-label-fill: white; }
+
+.underline {
+    -fx-underline: true;
+}
+
+#playBtn, #loginBtn, #loginMSBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 5px 16px;
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+}
+
+#playBtn:hover, #loginBtn:hover {
+    -fx-border-color: #ffae00;
+}
