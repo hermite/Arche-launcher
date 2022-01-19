@@ -35,13 +35,13 @@ public class Main extends Application {
     public static final String UPDATE_URL = "https://launcheur.arche-rp.fr/client/";
 
     private static final GameVersion BETA_VERSION = new GameVersion("1.12.2", GameType.V1_8_HIGHER);
-    public static final GameInfos BETA_INFOS = new GameInfos("Arche_RP_testing", BETA_VERSION, new GameTweak[] { GameTweak.FORGE });
+    public static final GameInfos BETA_INFOS = new GameInfos("", BETA_VERSION, new GameTweak[] { GameTweak.FORGE });
     public static final File BETA_DIR = BETA_INFOS.getGameDir();
-    public static final String BETA_UPDATE_URL = "https://testing.launcher.esperia-rp.net/";
+    public static final String BETA_UPDATE_URL = "";
 
-    public static final String LAUNCHER_VERSION = "1.1.0";
+    public static final String LAUNCHER_VERSION = "1.3.0";
     public static final String LAUNCHER_CHECK_URL = "https://launcheur.arche-rp.fr/client/resources/launcher.version";
-    public static final String LAUNCHER_DOWNLOAD_EXE_URL = "https://launcheur.arche-rp.fr/client/resources/Arche_RP.jar";
+    public static final String LAUNCHER_DOWNLOAD_EXE_URL = "https://launcheur.arche-rp.fr/client/resources/Arche_RP.exe";
     public static final String LAUNCHER_DOWNLOAD_JAR_URL = "https://launcheur.arche-rp.fr/client/resources/Arche_RP.jar";
 
     public static Account account;

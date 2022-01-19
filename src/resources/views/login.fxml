@@ -35,20 +35,20 @@
    </Label>
    <TextField fx:id="usernameField" layoutX="438.0" layoutY="356.0" prefHeight="25.0" prefWidth="325.0" promptText="Email / Nom de compte">
        <font>
-           <Font size="18.0" name="White Storm"/>
+           <Font size="25.0" name="White Storm"/>
        </font>
    </TextField>
    <PasswordField fx:id="passwordField" layoutX="438.0" layoutY="406.0" prefHeight="25.0" prefWidth="325.0" promptText="Mot de passe">
         <font>
-            <Font size="18.0" name="White Storm"/>
+            <Font size="25.0" name="White Storm"/>
         </font>
     </PasswordField>
-    <Button fx:id="loginBtn" alignment="CENTER" layoutX="438.0" layoutY="498.0" onMouseReleased="#onConnectClicked" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-padding: 5px 16px; -fx-border-width: 2px;" styleClass="hand" text="Connexion">
+    <Button fx:id="loginBtn" alignment="CENTER" layoutX="438.0" layoutY="510.0" onMouseReleased="#onConnectClicked" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-padding: 5px 16px; -fx-border-width: 2px;" styleClass="hand" text="Connexion">
       <font>
          <Font name="White Storm" size="30.0" />
       </font>
     </Button>
-    <Button fx:id="loginMSBtn" alignment="CENTER" layoutX="694.0" layoutY="497.0" onMouseReleased="#onConnectMSClicked" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-padding: 5px 16px; -fx-border-width: 2px;" styleClass="hand" minHeight="45">
+    <Button fx:id="loginMSBtn" alignment="CENTER" layoutX="694.0" layoutY="510.0" onMouseReleased="#onConnectMSClicked" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-padding: 5px 16px; -fx-border-width: 2px;" styleClass="hand" minHeight="45">
         <graphic>
             <ImageView layoutX="739.0" layoutY="450.0">
                 <Image requestedHeight="24" requestedWidth="24" url="@../images/ms.png" />
@@ -58,10 +58,10 @@
     <ImageView fx:id="back" layoutX="64.0" layoutY="637.0" onMouseReleased="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="hand" visible="false">
         <Image url="@../images/background.png" />
     </ImageView>
-    <CheckBox fx:id="rememberCheck" layoutX="438.0" layoutY="457.0" mnemonicParsing="false"  textFill="WHITE"/>
+    <CheckBox fx:id="rememberCheck" layoutX="438.0" layoutY="463.0" mnemonicParsing="false"  textFill="WHITE"/>
    <Label layoutX="460.0" layoutY="457.0" mnemonicParsing="false" text="Se souvenir" textFill="WHITE">
        <font>
-           <Font size="18.0" name="White Storm"/>
+           <Font size="25.0" name="White Storm"/>
        </font>
    </Label>
    <Label fx:id="loginStatusLabel" layoutX="438.0" layoutY="534.0" maxWidth="325.0" wrapText="true" />

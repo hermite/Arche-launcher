@@ -140,11 +140,15 @@ public class PlayController {
         } else {
             su = new SUpdate(Main.BETA_UPDATE_URL, Main.BETA_DIR);
         }
-        //Ajout SaveFiles
+
+
+
+        //Ajout Sauvegarde des fichiers de moreplayermodels
+        File Option = new File(Main.DIR + "/options.txt");
+        /*
         File SaveDir = new File(Main.DIR.getParent() + "/.Arche_RP_Save");
         File SaveModelFile = new File(SaveDir + "/SaveModelPlayer.zip");
         File ModelsDir = new File(Main.DIR + "/moreplayermodels");
-        File Option = new File(Main.DIR + "/options.txt");
 
         if (!SaveDir.exists() || !SaveDir.isDirectory())
         {
@@ -154,7 +158,7 @@ public class PlayController {
         if(ModelsDir.exists()) {
             ZipHandlers.SaveFilesOnZip(Main.DIR + "/moreplayermodels", SaveModelFile.toString());
         }
-        //Fin Ajout SaveFiles
+        //Fin Ajout SaveFiles*/
        su.addApplication(new FileDeleter());
 
 
@@ -204,14 +208,14 @@ public class PlayController {
             //Ajout SaveFiles
             if(!Option.exists()) {
                 ZipHandlers.unzip(new File(Main.DIR + "/config.zip"), Main.DIR);
-            }
+            }/*
             if(ModelsDir.exists()) {
                 ZipHandlers.unzip(SaveModelFile,new File(Main.DIR + "/moreplayermodels"));
             }
 
             //Fin Ajout SaveFiles
 
-
+*/
             launch();
         } catch (Exception e) {
             e.printStackTrace();
